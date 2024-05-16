@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en,fr,ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Site</title>
+    <link rel="stylesheet" href="C:\Users\Acer\Desktop\E-commerce site\style.css">
+    <script src="C:\Users\Acer\Desktop\E-commerce site\script.js"></script>
+    <link a href="https//:www.E-commerce.com">
+</head>
+<body>
+    <header>
+        <h1>E-commerce Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product">
+                <h3>Product 1</h3>
+                <p>Description for product 1</p>
+                <p>10 TND</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 2</h3>
+                <p>Description for product 2</p>
+                <p>15 TND</p>
+                <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: 0.00 <span id="total-amount">TND</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
